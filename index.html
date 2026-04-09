@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVerse CMS - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <div class="logo-container">
+                <img src="logo.png" alt="EcoVerse Logo" class="brand-logo" onerror="this.src=''; this.alt='EcoVerse'">
+                <h2>EcoVerse<span>.</span></h2>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="ri-dashboard-line"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ri-bar-chart-box-line"></i> Statistiques
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ri-community-line"></i> Communauté
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ri-settings-4-line"></i> Paramètres
+                </a>
+            </nav>
+
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div>
+                    <h1>Vue d'ensemble de l'Écosystème</h1>
+                    <p class="subtitle">Bienvenue sur votre espace d'administration EcoVerse</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon"><i class="ri-notification-3-line"></i></button>
+                    <div class="eco-score">
+                        <i class="ri-leaf-line"></i> Score Global : <strong>8,450</strong>
+                    </div>
+                </div>
+            </header>
+
+            <section class="mission-banner glass">
+                <div class="mission-content">
+                    <h2>Un avenir plus vert commence ici</h2>
+                    <p>
+                        EcoVerse est un écosystème d'applications visant à sensibiliser, informer et impliquer les citoyens dans des actions durables. En combinant géolocalisation et approche communautaire, le projet encourage des comportements écoresponsables.
+                    </p>
+                </div>
+                <div class="mission-illustration">
+                    <i class="ri-earth-line pulse-icon"></i>
+                </div>
+            </section>
+
+            <!-- Apps Grid -->
+            <section class="apps-grid">
+                
+                <!-- EnerGreen -->
+                <article class="app-card glass energetic-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper energreen">
+                            <img src="energreen.png" alt="EnerGreen" onerror="this.outerHTML='<i class=\'ri-flashlight-line\'></i>'">
+                        </div>
+                        <div class="status-badge running">Actif</div>
+                    </div>
+                    <h3>EnerGreen</h3>
+                    <p>Suivi et réduction de la consommation énergétique. Optimisez vos ressources d'un simple clic.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-user-line"></i> 12k utilisateurs</span>
+                        <button class="btn-outline">Gérer</button>
+                    </div>
+                </article>
+
+                <!-- EcoQuiz -->
+                <article class="app-card glass quiz-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper ecoquiz">
+                            <img src="ecoquiz.png" alt="EcoQuiz" onerror="this.outerHTML='<i class=\'ri-brain-line\'></i>'">
+                        </div>
+                        <div class="status-badge running">Actif</div>
+                    </div>
+                    <h3>EcoQuiz</h3>
+                    <p>Éducation écologique par le jeu. Sensibilisez la communauté avec des défis ludiques.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-trophy-line"></i> 5k quiz complétés</span>
+                        <button class="btn-outline">Gérer</button>
+                    </div>
+                </article>
+
+                <!-- GreenMap -->
+                <article class="app-card glass map-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper greenmap">
+                            <img src="greenmap.png" alt="GreenMap" onerror="this.outerHTML='<i class=\'ri-map-pin-line\'></i>'">
+                        </div>
+                        <div class="status-badge running">Actif</div>
+                    </div>
+                    <h3>GreenMap</h3>
+                    <p>Cartographie interactive des points d'intérêts écologiques. Découvrez le réseau vert de votre ville.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-map-2-line"></i> 850 points</span>
+                        <button class="btn-outline">Gérer</button>
+                    </div>
+                </article>
+
+                <!-- CleanSpot -->
+                <article class="app-card glass clean-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper cleanspot">
+                            <img src="cleanspot.png" alt="CleanSpot" onerror="this.outerHTML='<i class=\'ri-delete-bin-line\'></i>'">
+                        </div>
+                        <div class="status-badge new">Nouveau</div>
+                    </div>
+                    <h3>CleanSpot</h3>
+                    <p>Gestion intelligente et communautaire du tri des déchets. Transformez vos rebuts en ressources.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-recycle-line"></i> 3.2 tonnes triées</span>
+                        <button class="btn-outline">Gérer</button>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Puure Chatbot Widget -->
+    <div class="puure-widget" id="puureWidget">
+        <div class="puure-chat glass" id="puureChat">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <img src="puure.png" alt="Puure Avatar" class="puure-avatar" onerror="this.outerHTML='<i class=\'ri-robot-line puure-avatar-fallback\'></i>'">
+                    <div>
+                        <h4>Puure</h4>
+                        <span class="chat-status">Votre assistant EcoVerse</span>
+                    </div>
+                </div>
+                <button class="btn-close" id="closeChat"><i class="ri-close-line"></i></button>
+            </div>
+            
+            <div class="chat-body">
+                <div class="message bot-message">
+                    <div class="msg-content">
+                        Bonjour ! Je suis <strong>Puure</strong>, votre assistant intelligent intégré au CMS EcoVerse. 🌱
+                    </div>
+                </div>
+                <div class="message bot-message">
+                    <div class="msg-content delay-1">
+                        Comment puis-je vous aider à gérer votre empreinte écologique ou vos applications aujourd'hui ?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-footer">
+                <input type="text" placeholder="Demander à Puure..." class="chat-input border-blob">
+                <button class="btn-send"><i class="ri-send-plane-fill"></i></button>
+            </div>
+        </div>
+        
+        <button class="puure-trigger glow-effect" id="toggleChat">
+            <img src="puure.png" alt="Puure" onerror="this.outerHTML='<i class=\'ri-chat-smile-3-line\'></i>'">
+            <div class="notification-dot"></div>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
